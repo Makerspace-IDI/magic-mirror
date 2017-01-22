@@ -26,13 +26,13 @@ var config = {
 		},
 		{
 			module: 'calendar',
-			header: 'US Holidays',
+			header: 'Norwegian Holidays',
 			position: 'top_left',
 			config: {
 				calendars: [
 					{
 						symbol: 'calendar-check-o ',
-						url: 'webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics'
+						url: 'webcal://www.calendarlabs.com/templates/ical/Norway-Holidays.ics'
 					}
 				]
 			}
