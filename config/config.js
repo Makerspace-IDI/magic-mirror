@@ -74,6 +74,27 @@ var config = {
 				showPublishDate: true
 			}
 		},
+		{
+			module: 'MMM-Facial-Recognition',
+			config: {
+				recognitionAlgorithm: 1,
+				lbphThreashold: 50,
+				fisherThreshold: 250,
+				eigenThreshold: 3000,
+				useUSBCam: true,
+				trainingFile: 'modules/MMM-Facial-Recognition/training.xml',
+				// Recognition interval in seconsd
+				interval: 2,
+				// Logout delay after last recognition so that a user does not get
+				// instantly logged out if he turns away
+				logoutDelay: 15,
+				users: [],
+				// Module shown to strangers
+				defualtClass: 'default',
+				deveryoneClass: 'everyone',
+				welcomeMessage: true
+			}
+		}
 	]
 
 };
