@@ -65,7 +65,6 @@ var config = {
 		/*{
 			module: "newsfeed",
 			position: "bottom_bar",
-			classes: "default everyone",
 			config: {
 				feeds: [
 					{
@@ -90,8 +89,8 @@ var config = {
 				interval: 2,
 				// Logout delay after last recognition so that a user does not get
 				// instantly logged out if he turns away
-				logoutDelay: 15,
-				//users: [estensen],
+				logoutDelay: 30,
+				users: ["estensen"],
 				defaultClass: "default",
 				everyoneClass: "everyone",
 				//estensen: "helloworld",
