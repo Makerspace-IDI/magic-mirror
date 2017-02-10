@@ -94,15 +94,24 @@ var config = {
 				defaultClass: "default",
 				everyoneClass: "everyone",
 				//estensen: "helloworld",
-				welcomeMessage: false
+				welcomeMessage: true
 			}
 		},
-		{
+		/*{
 			module: "helloworld",
 			position: "bottom_bar",
 			classes: "estensen",
 			config: {
 				text: "Hello estensen"
+			}
+		},*/
+		{
+			module: "MMM-Wunderlist",
+			position: "top_right",
+			classes: "estensen",
+			header: "Wunderlist",
+			config: {
+				// Add user info
 			}
 		}
 	]
