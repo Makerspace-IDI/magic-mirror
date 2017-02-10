@@ -97,7 +97,7 @@ var config = {
 		},
 		{
 			module: 'helloworld',
-			position 'bottom_bar',
+			position: 'bottom_bar',
 			config: {
 				text: 'Hello Håvard'
 			}
