@@ -60,7 +60,7 @@ var config = {
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
-		{
+		/*{
 			module: "newsfeed",
 			position: "bottom_bar",
 			config: {
@@ -73,16 +73,16 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			}
-		},
+		},*/
 		{
-			module: "MMM-Facial-Recognition",
+			module: "custom_modules/MMM-Facial-Recognition",
 			config: {
 				recognitionAlgorithm: 1,
 				lbphThreshold: 50,
 				fisherThreshold: 250,
 				eigenThreshold: 3000,
 				useUSBCam: true,
-				trainingFile: "modules/MMM-Facial-Recognition/custom_modules/training.xml",
+				trainingFile: "custom_modules/MMM-Facial-Recognition/training.xml",
 				// Recognition interval in seconds
 				interval: 2,
 				// Logout delay after last recognition so that a user does not get
