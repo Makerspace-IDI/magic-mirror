@@ -34,7 +34,8 @@ var config = {
 				calendars: [
 					{
 						symbol: "calendar-check-o ",
-						url: "webcal://www.calendarlabs.com/templates/ical/Norway-Holidays.ics"
+						url: "webcal://www.ntnu.1024.no/2017/var/estensen/ical/forelesninger/?"
+						// url: "webcal://www.calendarlabs.com/templates/ical/Norway-Holidays.ics"
 					}
 				]
 			}
@@ -89,8 +90,8 @@ var config = {
 				interval: 2,
 				// Logout delay after last recognition so that a user does not get
 				// instantly logged out if he turns away
-				logoutDelay: 30,
-				users: ["estensen", "henry"],
+				logoutDelay: 15,
+				users: ["estensen"],
 				defaultClass: "default",
 				everyoneClass: "everyone",
 				//estensen: "helloworld",
