@@ -27,9 +27,9 @@ var config = {
 		},
 		{
 			module: "calendar",
-			header: "Norwegian Holidays",
+			header: "Forelesninger",
 			position: "top_left",
-			classes: "default everyone",
+			classes: "estensen",
 			config: {
 				calendars: [
 					{
@@ -63,20 +63,22 @@ var config = {
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
-		/*{
+		{
 			module: "newsfeed",
 			position: "bottom_bar",
+			classes: "default everyone",
 			config: {
 				feeds: [
 					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+						title: "NRK",
+						url: "http://www.nrk.no/toppsaker.rss"
+						// url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
 					}
 				],
 				showSourceTitle: true,
-				showPublishDate: true
+				showPublishDate: false
 			}
-		},*/
+		},
 		{
 			module: "MMM-Facial-Recognition",
 			config: {
