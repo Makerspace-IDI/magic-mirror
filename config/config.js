@@ -90,7 +90,7 @@ var config = {
 				// Logout delay after last recognition so that a user does not get
 				// instantly logged out if he turns away
 				logoutDelay: 30,
-				users: ["estensen"],
+				users: ["estensen", "henry"],
 				defaultClass: "default",
 				everyoneClass: "everyone",
 				//estensen: "helloworld",
