@@ -22,12 +22,14 @@ var config = {
 		},
 		{
 			module: "clock",
-			position: "top_left"
+			position: "top_left",
+			classes: "default everyone"
 		},
 		{
 			module: "calendar",
 			header: "Norwegian Holidays",
 			position: "top_left",
+			classes: "default everyone",
 			config: {
 				calendars: [
 					{
@@ -63,6 +65,7 @@ var config = {
 		/*{
 			module: "newsfeed",
 			position: "bottom_bar",
+			classes: "default everyone",
 			config: {
 				feeds: [
 					{
@@ -75,28 +78,32 @@ var config = {
 			}
 		},*/
 		{
-			module: "modules/MMM-Facial-Recognition",
+			module: "MMM-Facial-Recognition",
 			config: {
 				recognitionAlgorithm: 1,
 				lbphThreshold: 50,
 				fisherThreshold: 250,
 				eigenThreshold: 3000,
 				useUSBCam: true,
-				trainingFile: "MMM-Facial-Recognition/training.xml",
+				trainingFile: "modules/MMM-Facial-Recognition/training.xml",
 				// Recognition interval in seconds
 				interval: 2,
 				// Logout delay after last recognition so that a user does not get
 				// instantly logged out if he turns away
 				logoutDelay: 15,
-				users: [estensen]
-				estensen: "helloworld"
+				//users: [estensen],
+				defaultClass: "default",
+				everyoneClass: "everyone",
+				//estensen: "helloworld",
+				welcomeMessage: false
 			}
 		},
 		{
 			module: "helloworld",
 			position: "bottom_bar",
+			classes: "estensen",
 			config: {
-				text: "Hello Håvard"
+				text: "Hello estensen"
 			}
 		}
 	]
