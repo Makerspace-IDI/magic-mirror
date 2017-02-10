@@ -8,61 +8,61 @@ var config = {
 	port: 8080,
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"],
 
-	language: 'en',
+	language: "en",
 	timeFormat: 24,
-	units: 'metric',
+	units: "metric",
 
 	modules: [
 		{
-			module: 'alert',
+			module: "alert",
 		},
 		{
 			module: "updatenotification",
 			position: "top_bar"
 		},
 		{
-			module: 'clock',
-			position: 'top_left'
+			module: "clock",
+			position: "top_left"
 		},
 		{
-			module: 'calendar',
-			header: 'Norwegian Holidays',
-			position: 'top_left',
+			module: "calendar",
+			header: "Norwegian Holidays",
+			position: "top_left",
 			config: {
 				calendars: [
 					{
-						symbol: 'calendar-check-o ',
-						url: 'webcal://www.calendarlabs.com/templates/ical/Norway-Holidays.ics'
+						symbol: "calendar-check-o ",
+						url: "webcal://www.calendarlabs.com/templates/ical/Norway-Holidays.ics"
 					}
 				]
 			}
 		},
 		{
-			module: 'compliments',
-			position: 'lower_third'
+			module: "compliments",
+			position: "lower_third"
 		},
 		{
-			module: 'currentweather',
-			position: 'top_right',
+			module: "currentweather",
+			position: "top_right",
 			config: {
-				location: 'New York',
-				locationID: '',  //ID from http://www.openweathermap.org
-				appid: 'YOUR_OPENWEATHER_API_KEY'
+				location: "New York",
+				locationID: "",  //ID from http://www.openweathermap.org
+				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
 		{
-			module: 'weatherforecast',
-			position: 'top_right',
-			header: 'Weather Forecast',
+			module: "weatherforecast",
+			position: "top_right",
+			header: "Weather Forecast",
 			config: {
-				location: 'New York',
-				locationID: '5128581',  //ID from http://www.openweathermap.org
-				appid: 'YOUR_OPENWEATHER_API_KEY'
+				location: "New York",
+				locationID: "5128581",  //ID from http://www.openweathermap.org
+				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
 		{
-			module: 'newsfeed',
-			position: 'bottom_bar',
+			module: "newsfeed",
+			position: "bottom_bar",
 			config: {
 				feeds: [
 					{
@@ -75,14 +75,14 @@ var config = {
 			}
 		},
 		{
-			module: 'MMM-Facial-Recognition',
+			module: "MMM-Facial-Recognition",
 			config: {
 				recognitionAlgorithm: 1,
 				lbphThreshold: 50,
 				fisherThreshold: 250,
 				eigenThreshold: 3000,
 				useUSBCam: true,
-				trainingFile: 'modules/MMM-Facial-Recognition/custom_modules/training.xml',
+				trainingFile: "modules/MMM-Facial-Recognition/custom_modules/training.xml",
 				// Recognition interval in seconds
 				interval: 2,
 				// Logout delay after last recognition so that a user does not get
@@ -90,16 +90,16 @@ var config = {
 				logoutDelay: 15,
 				users: [havard],
 				// Module shown to strangers
-				defaultClass: 'default',
-				everyoneClass: 'everyone',
+				defaultClass: "default",
+				everyoneClass: "everyone",
 				welcomeMessage: true
 			}
 		},
 		{
-			module: 'helloworld',
-			position: 'bottom_bar',
+			module: "helloworld",
+			position: "bottom_bar",
 			config: {
-				text: 'Hello Håvard'
+				text: "Hello Håvard"
 			}
 		}
 	]
@@ -107,4 +107,4 @@ var config = {
 };
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
-if (typeof module !== 'undefined') {module.exports = config;}
+if (typeof module !== "undefined") {module.exports = config;}
