@@ -112,9 +112,12 @@ var config = {
 			module: "MMM-Wunderlist",
 			position: "top_right",
 			classes: "estensen",
-			header: "Wunderlist",
+			header: "TODO",
 			config: {
 				// Add user info
+				accessToken: "",
+				clientID: "",
+				lists: ["TODO"]
 			}
 		}
 	]
